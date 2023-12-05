@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resource/assets/css/main.css">
+	<title>Autoresbot</title>
+	<link rel="canonical" href="https://autoresbot.com/auth.html" />
+	<style>
+		.row {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		.login {
+			max-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 80vh;
+		}
+		.login form {
+			background: var(--BgCard);
+			padding: 10px;
+			width: 100%;
+			max-width: 400px;
+			border-radius: 12px;
+		}
+		label {
+			width: 100%;
+			display: inline-block;
+		}
+		.login form input, .login form button {
+			width: 100%;
+			padding: 12px;
+			border-radius:4px;
+			border: none;
+			margin-bottom: 12px;
+		}
+		.login form button {
+			cursor: pointer;
+			background: rgb(255,119,0);
+			background: linear-gradient(80deg, rgba(255,119,0,1) 1%, rgba(255,218,0,0.6940827356333159) 100%);
+			color: var(--ColorWhite);
+			margin-top: 15px;
+		}
+		.login img {
+			width: 50%;
+			margin-left: 25%;
+			padding: 20px;
+		}
+		.notifNewAccount {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: rgb(0, 0, 0, 0.8);
+		}
+		.content_notifNewAccount {
+			background: #264653;
+			border-radius: 4px;
+			max-width: 400px;
+			color: white;
+			width: 100%;
+			padding: 12px;
+		}
+		.content_notifNewAccount a {
+			display: inline-block;
+			width: 100%;
+			border-radius: 4px;
+			padding: 10px;
+			text-decoration: none;
+			text-align: center;
+			margin-top: 20px;
+			color: var(--ColorWhite);
+		}
+		.content_notifNewAccount a.active{
+			background: rgb(255,119,0);
+			background: linear-gradient(80deg, rgba(255,119,0,1) 1%, rgba(255,218,0,0.6940827356333159) 100%);
+		}
+		.content_notifNewAccount a.inactive{
+			background: #8d99ae;
+			opacity: 0.6;
+		}
+	</style>
+</head>
+<body>
+	<div class="loading" id="loading" style="display: none;">
+		<div class="loader"></div>
+	</div>
+	<section>
+		<div class="container">
+			<header>
+				<div class="menu">
+					<h1>Autoresbot</h1>
+					<div class="submenu">
+						<a href="index.html">Home</a>
+						<a href="panel-sub/index.html" target="_blank">Panel</a>
+						<a href="api.html">Api</a>
+						<a href="script.html">Script</a>
+						<a href="contact.html">Contact</a>
+														<a href="auth.html" class="active">Login</a>
+											</div>
+					<div class="iconmenu">
+						<img id="openmenu" onclick="MenuClick('auth/open.html')" class="filter-white" src="resource/assets/svg/bars-solid.svg">
+						<img id="closemenu" onclick="MenuClick('auth/close.html')" style="display: none;" class="filter-white" src="resource/assets/svg/close-svgrepo-com.svg">
+					</div>
+				</div>
+			</header>
+			<div class="MenuMobile">
+					<div class="submenu_mobile">
+							<a href="index.html">Home</a>
+							<a href="panel-sub/index.html" target="_blank">Panel</a>
+							<a href="api.html">Api</a>
+							<a href="script.html">Script</a>
+							<a href="contact.html">Contact</a>
+													<a href="auth.html" class="active">Login</a>
+					</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="login">
+				<form action="" method="POST" autocomplete="off" onsubmit="loading()">
+					<img src="resource/assets/img/login.png" alt="">
+					<label for="phone" class="text-white opacity-6 text-4">Username / Email</label>
+					<input id="phone" value="" name="user" required type="text" placeholder="Your Username Or Email">
+					<label for="password" class="text-white opacity-6 text-4">Password</label>
+					<input id="password" value="" name="password" required type="password" placeholder="Your Password">
+					<button>Submit</button>
+					<div style="display:flex; justify-content: space-between; padding: 12px;">
+						<a href="auth/forget_password.html" class="text-white opacity-6 text-4 tnone">Lupa Password</a>
+						<a href="auth/register.html" class="text-white opacity-6 text-4 tnone" >New Account</a>
+					</div>
+					<input type="hidden" name="csrf_" value="8c1ca18f2dd5e0c0865133cd7f65dc37">
+				</form>
+			</div>
+		</div>
+	</section>
+	<script src="resource/assets/js/script.js"></script>
+</body>
+</html>

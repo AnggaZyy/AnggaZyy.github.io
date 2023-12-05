@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import "mobile.css" screen and (max-width: 992px);
+@import "dekstop.css" screen and (min-width: 991px);
+@import "bootstrap-grid.min.css";
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+:root {
+	--BgBody: #0A052E;
+	--BgCard: #121C42;
+	--BgBlue: #1947AA;
+	--ColorYellow: #ffd60a;
+	--ColorWhite: #edede9;
+}
+h2 {
+	font-size: 2.2rem;
+}
+.text-white {
+	color: white;
+}
+.opacity-1 {opacity: 0.1;}
+.opacity-2 {opacity: 0.2;}
+.opacity-3 {opacity: 0.3;}
+.opacity-4 {opacity: 0.4;}
+.opacity-5 {opacity: 0.5;}
+.opacity-6 {opacity: 0.6;}
+.opacity-7 {opacity: 0.7;}
+.opacity-8 {opacity: 0.8;}
+.opacity-9 {opacity: 0.9;}
+.opacity-10 {opacity: 1;}
+body {
+	background: var(--BgBody);
+
+}
+img.img-circle {
+	border-radius: 50%;
+
+}
+
+section {
+	display: flex;
+	justify-content: center;
+
+}
+section > .container {
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px;
+}
+.filter-white{
+   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(51deg) brightness(103%) contrast(104%);
+}
+
+.align-item-center {
+	align-items: center;
+}
+.blur {
+	filter: blur(5px);
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+.mt-5 {margin-top: 40px;}
+.mt-4 {margin-top: 32px;}
+.mt-3 {margin-top: 24px;}
+.mt-2 {margin-top: 16px;}
+.mt-1 {margin-top: 8px;}
+
+.text-1 {font-size: 0.4em;}
+.text-2 {font-size: 0.5em;}
+.text-3 {font-size: 0.6em;}
+.text-4 {font-size: 0.7em;}
+
+.tnone {
+	text-decoration: none;
+}
+.flex-center {
+	display: flex;
+	align-items: center;
+}
+/* 
+==================================================================
+=======================| HEADER OPEN  |===========================
+*/
+
+.container header {
+	border-radius: 4px;
+	background: var(--BgCard);
+	color: var(--ColorWhite);
+	margin-top: 5px;
+}
+.container header .menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Poppins', sans-serif;
+	padding: 10px;
+
+}
+
+.container header .menu img {
+	min-width: 20px;
+	max-width: 30px;
+}
+.container .submenu a {
+	margin-right: 30px;
+	text-decoration: none;
+	color: var(--ColorWhite);
+
+}
+.container .submenu a.active {
+	color: var(--ColorYellow);
+	
+}
+
+/* 
+==================================================================
+=======================| HEADER CLOSE  |===========================
+*/
+
+
+
+
+
+
+/* 
+==================================================================
+=======================| JUMBOTRON OPEN  |===========================
+*/
+
+.jumboTron {
+	color: var(--ColorWhite);
+}
+.jumboTron span{
+	color: var(--ColorYellow);
+}
+.jumboTron a {
+	background: rgb(255,119,0);
+	background: linear-gradient(80deg, rgba(255,119,0,1) 1%, rgba(255,218,0,0.6940827356333159) 100%);
+	border-radius: 4px;
+	padding: 10px;
+	text-decoration: none;
+	color: var(--ColorWhite);
+}
+
+
+.jumboTron a.belipanel {
+	border:1px solid rgba(255,218,0,0.6940827356333159);
+	background: transparent;
+	border-radius: 4px;
+	padding: 10px;
+	text-decoration: none;
+	color: var(--ColorWhite);
+	margin-left: 9px;
+}
+
+.jumboTron img {
+	width: 100%;
+}
+/* 
+==================================================================
+=======================| JUMBOTRON CLOSE  |===========================
+*/
+
+
+/* 
+==================================================================
+=======================| CARD OPEN  |===========================
+*/
+img.fix-img {
+	width: 100%;
+}
+.main-card {
+	padding: 10px;
+	margin-top: 20px;
+}
+img.img-card {
+	min-width: 80px;
+	width: 60%;
+	margin-left: 20%;
+	padding: 20px;
+}
+.card {
+	background: var(--BgCard);
+	border-radius: 12px;
+	height: 100%;
+	padding: 20px;
+	
+}
+.card.active {
+	border: 3px solid var(--ColorYellow);
+	position: relative;
+}
+.card.active > span {
+	background: var(--ColorYellow);
+	color: black;
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 0.8em;
+	padding: 3px;
+	border-top-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+.sewaTable {
+	border-bottom: 1px solid #808080;
+}
+a.btn-sewa  {
+	background: var(--BgBlue);
+	text-decoration: none;
+	width: 100%;
+	color: white;
+	margin-top: 15px;
+	padding: 10px;
+	border-radius: 4px;
+	font-size: 0.8em;
+	display: inline-block;
+}
+
+.card-Blue {
+	background: var(--BgBlue);
+	border-radius: 4px;
+	
+}
+.card-Blue div {
+	padding: 50px;
+}
+
+/* 
+==================================================================
+=======================| CARD CLOSE  |===========================
+*/
+
+
+
+
+
+/* 
+==================================================================
+=======================| FOOTER OPEN  |===========================
+*/
+
+.footer form input{
+	width: 100%;
+	padding: 10px 5px;
+	border-radius: 4px;
+	outline: none;
+	border: none;
+}
+
+
+/* 
+==================================================================
+=======================| FOOTER CLOSE  |===========================
+*/
+
+
+
+
+/* 
+==================================================================
+=======================| API OPEN  |===========================
+*/
+
+
+table.table-style-api {
+	border-collapse: collapse;
+	color: var(--ColorWhite);
+	background: var(--BgCard);
+
+}
+table.table-style-api thead {
+	background: #83c5be;
+	color: black;
+}
+table.table-style-api td {
+	padding: 10px 8px;
+}
+
+
+.hreftableclicks:hover {
+	cursor: pointer;
+	background: #184e77;
+}
+/*table.table-style-api tr:nth-child(even) {
+  background-color: #003566;
+}*/
+
+
+.loading {
+			background: rgb(0, 0, 0, 0.8);
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			z-index: 99999;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.loading .loader {
+			  border: 3px solid #f3f3f3; 
+			  border-top: 3px solid #3498db;
+			  border-radius: 50%;
+			  width: 40px;
+			  height: 40px;
+			  animation: spin 2s linear infinite;
+		}
+
+		@keyframes spin {
+		  0% { transform: rotate(0deg); }
+		  100% { transform: rotate(360deg); }
+		}
+
+		
+
+/* 
+==================================================================
+=======================| API CLOSE  |===========================
+*/

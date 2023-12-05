@@ -1,0 +1,47 @@
+/* 
+==================================================================
+=======================| HEADER OPEN  |===========================
+*/
+
+.container header {
+	background: var(--BgCard);
+	color: var(--ColorWhite);
+	margin-top: 5px;
+}
+.container header .menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Poppins', sans-serif;
+
+
+}
+.container .submenu {
+	display: flex;
+	justify-content: center;
+
+}
+.container .iconmenu {
+	display: none;
+}
+.container .submenu a {
+	margin-right: 30px;
+	text-decoration: none;
+	color: var(--ColorWhite);
+
+}
+
+
+.MenuMobile {
+	display: none;
+}
+
+
+/* 
+==================================================================
+=======================| HEADER CLOSE  |===========================
+*/
+img.fix-mobile{
+	width: 100%;
+	margin-left: 0;
+}

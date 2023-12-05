@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resource/assets/css/main.css">
+	<link rel='shortcut icon' type='image/x-icon' href='http://localhost/Anggazyy - AIBOT/Anggazyy - AIbot_server/public/resource/assets/ico/fav.ico'>	<title>Anggazyy - AIbot</title>
+	<link rel="canonical" href="https://Anggazyy - AIbot.com/contact.html" />
+	<style>
+		.row {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		.contact {
+			max-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			min-height: 80vh;
+		}
+		.incontainer {
+			background: var(--BgCard);
+			padding: 10px;
+			width: 100%;
+			max-width: 400px;
+			border-radius: 12px;
+			max-width: 600px;
+			width: 100%;
+		}
+		.incontainer a {
+			display: inline-block;
+			background: rgb(255,119,0);
+			background: linear-gradient(80deg, rgba(255,119,0,1) 1%, rgba(255,218,0,0.6940827356333159) 100%);
+			border-radius: 4px;
+			width: 100%;
+			padding: 12px;
+			margin-bottom:22px;
+			margin-top: 12px;
+			text-decoration: none;
+			color: white;
+			text-align: center;
+		}
+		.incontainer a.telegramColor {
+			background: #229ED9;
+		}
+		.incontainer a.waColor{
+			background: #25D366;
+		}
+	</style>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<header>
+				<div class="menu">
+					<h1>ANGGAZYY AI BOT</h1>
+					<div class="submenu">
+						<a href="index.html">Home</a>
+						<a href="contact.html" class="active">Contact</a>
+												<a href="#">Login</a>
+											</div>
+					<div class="iconmenu">
+						<img id="openmenu" onclick="MenuClick('contact/open.html')" class="filter-white" src="resource/assets/svg/bars-solid.svg">
+						<img id="closemenu" onclick="MenuClick('contact/close.html')" style="display: none;" class="filter-white" src="resource/assets/svg/close-svgrepo-com.svg">
+					</div>
+				</div>
+			</header>
+			<div class="MenuMobile">
+					<div class="submenu_mobile">
+						<a href="index.html">Home</a>
+						<a href="contact.html" class="active">Contact</a>
+												<a href="#">Login</a>
+											</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class="contact">
+				<div class="incontainer">
+					<a target="_blank" href="https://wa.me/6282193222977" class="telegramColor">Owner bot [sering online]</a>
+							<a target="_blank" href="https://youtube.com/@anggazyyzxyy?si=k9nrHEGHRjyDLjVG" class="telegramColor">Youtube official]</a>
+					<a target="_blank" href="https://wa.me/6282193222977" class="waColor">Admin Anggazyy - AI</a>
+				   <a target="_blank" href="#" class="waColor">Nomor bot whatsapp</a>
+					<a target="_blank" href="#" class="waColor">Grub Wa Anggazyy - AI bot</a>
+				</div>
+			</div>
+		</div>
+	</section>
+			<div class="notifNewAccount" style="display: none;" id="displayNotif">
+				<div class="content_notifNewAccount">
+					<h4 class="text-center" id="text-notif"></h4>
+					<br>
+					<p class="opacity-7 text-4 text-white text-center">Setelah ini kamu akan diarahkan ke nomor whatsapp bot kami. Dan jangan ubah pesan apapun ketika melakukan verifikasi</p>
+					<a class="active" target="_blank" href="https://wa.me/62895328005151?text=Token ">VERIFIKASI WHATSAPP</a>
+					<a class="inactive" href="#close" onclick="NotifLogin('contact/close.html')">Close</a>
+				</div>
+			</div>
+	<script src="resource/assets/js/script.js"></script>
+</body>
+</html>

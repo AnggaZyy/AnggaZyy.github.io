@@ -1,0 +1,80 @@
+/* 
+==================================================================
+=======================| HEADER OPEN  |===========================
+*/
+
+.container header {
+	background: var(--BgCard);
+	color: var(--ColorWhite);
+	margin-top: 5px;
+}
+.container header .menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: 'Poppins', sans-serif;
+
+
+}
+.container .submenu {
+	display: none;
+	justify-content: center;
+
+
+}
+
+.container .iconmenu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.container .submenu a {
+	margin-right: 30px;
+	text-decoration: none;
+	color: var(--ColorWhite);
+
+}
+
+
+.MenuMobile {
+	margin-top: 10px;
+	background: var(--BgCard);
+	color: var(--ColorWhite);
+	display: flex;
+	position: relative;
+	top: -20px;
+	z-index: -1;
+	transition: all 0.2s;
+	opacity: 0;
+	height: 0px;
+
+}
+.MenuMobile.active{
+	top: 0px;
+	z-index: 1;
+	opacity: 1;
+	height: 100%;
+
+}
+.submenu_mobile {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 10px;
+
+}
+.submenu_mobile a{
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	margin-bottom: 15px;
+}
+
+/* 
+==================================================================
+=======================| HEADER CLOSE  |===========================
+*/
+img.fix-mobile{
+	width: 50%;
+	margin-left: 25%;
+}

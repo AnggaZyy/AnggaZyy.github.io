@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="resource/assets/css/main.css">
+	<link rel='shortcut icon' type='image/x-icon' href='http://localhost/AUTORESBOT/autoresbot_server/public/resource/assets/ico/fav.ico'>	<title>Autoresbot</title>
+	<link rel="canonical" href="https://autoresbot.com/beli_panel.html" />
+	<style>
+		.row {
+			padding: 0 !important;
+			margin: 0 !important;
+		}
+		.order button{
+			cursor: pointer;
+			width: 100%;
+			padding: 12px;
+			background: #229ED9;
+			border: none;
+			border-radius: 4px;
+			width: 100%;
+			padding: 12px;
+			margin-bottom:22px;
+			margin-top: 12px;
+			text-decoration: none;
+			color: white;
+			text-align: center;
+		}
+		.form-group label, .form-group select{
+			width: 100%;
+			color: white;
+			padding: 6px 2px;
+		}
+		.form-group select {
+			cursor: pointer;
+			color: black;
+			width: 100%;
+			padding: 12px;
+			margin-bottom: 20px;
+		}
+		.form-group input {
+			color: black;
+			width: 100%;
+			padding: 12px;
+			margin-bottom: 20px;
+		}
+		.notification {
+			margin-top: 12px;
+			margin-bottom: 0;
+			background: #e63946;
+			color: white;
+			padding: 5px;
+			border-radius: 4px;
+		}
+	</style>
+</head>
+<body>
+	<div class="loading" id="loading" style="display: none;">
+		<div class="loader"></div>
+	</div>
+	<section>
+		<div class="container">
+			<header>
+				<div class="menu">
+					<h1>Autoresbot</h1>
+					<div class="submenu">
+						<a href="index.html">Home</a>
+						<a href="panel-sub/index.html" target="_blank">Panel</a>
+						<a href="api.html">Api</a>
+						<a href="script.html">Script</a>
+						<a href="contact.html">Contact</a>
+												<a href="auth.html">Login</a>
+											</div>
+					<div class="iconmenu">
+						<img id="openmenu" onclick="MenuClick('beli_panel/open.html')" class="filter-white" src="resource/assets/svg/bars-solid.svg">
+						<img id="closemenu" onclick="MenuClick('beli_panel/close.html')" style="display: none;" class="filter-white" src="resource/assets/svg/close-svgrepo-com.svg">
+					</div>
+				</div>
+			</header>
+			<div class="MenuMobile">
+					<div class="submenu_mobile">
+						<a href="index.html">Home</a>
+						<a href="panel-sub/index.html" target="_blank">Panel</a>
+						<a href="api.html">Api</a>
+						<a href="script.html">Script</a>
+						<a href="contact.html">Contact</a>
+												<a href="auth.html">Login</a>
+											</div>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<div class=" text-center text-white mt-5">
+				<h2>ORDER PANEL</h2>
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="container">
+			<form method="POST" onsubmit="loading()">
+			<div class="row order card">
+				<div class="col-md-6 main-card">
+					<div class=" text-white opacity-8">
+						<!-- <p>Untuk melakukan pembelian panel, diharapkan untuk memasukkan data yang benar. Dan setelah melakukan pembayaran, data panel akan di kirimkan melalui email terkait, jadi pastikan data anda telah sesuai.</p> -->
+						<div class="form-group">
+							<label for="">Pilih Paket</label>
+							<select onchange="SelectPaket(this)" required name="paket">
+								<option disabled selected value="">-- ..... --</option>
+								<option value="PKT_A">Paket [ Ram 1GB - CPU 30% ]</option>
+								<option value="PKT_B">Paket [ Ram 2GB - CPU 50% ]</option>
+								<option value="PKT_C">Paket [ Ram 4GB - CPU 75% ]</option>
+								<option value="PKT_D">Paket [ Ram 6GB - CPU 90% ]</option>
+								<option value="PKT_E">Paket [ Unlimited Ram/Cpu]</option>
+								<option value="PKT_F">Paket [ Script Bot Only ]</option>
+								<option value="PKT_G">Paket [ Unlimited + Script Bot ]</option>
+							</select>
+						</div>
+						<input type="hidden" name="csrf_" value="92290428dfeaf2536cf0a14ad2e32f8f">
+						<div class="form-group">
+							<label class="opacity-7 text-4" for="">Total Harga</label>
+							<input type="text" id="getInputHarga" disabled>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 main-card">
+					<div class="">
+						<div class="form-group">
+							<label for="">Jenis Pembayaran</label>
+							<select name="payment" required>
+								<option disabled value="" selected>-- Pilih --</option>
+																	<option value="OVO">OVO</option>
+																	<option value="QRIS2">QRIS</option>
+																	<option value="DANA">DANA</option>
+																	<option value="SHOPEEPAY">ShopeePay</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label class="opacity-7 text-4" for="">Email [penting, untuk pengiriman data panel]</label>
+							<input type="email" value="" required name="email" placeholder="Email ...">
+						</div>
+						<button>Lanjut Pembayaran</button>
+					</div>
+				</div>
+			</div>
+			</form>
+		</div>
+	</section>
+	<script src="resource/assets/js/script.js"></script>
+</body>
+</html>
